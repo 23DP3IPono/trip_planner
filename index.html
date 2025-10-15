@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripPlanner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TripPlanner</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li class="dropdown">
+                        <a href="#">Services ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Flight Booking</a></li>
+                            <li><a href="#">Hotel Finder</a></li>
+                            <li><a href="#">Guided Tours</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="hamburger">☰</div>
+            </nav>
+            <button class="dark-mode-toggle">🌙</button>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <img src="https://traveler.marriott.com/wp-content/uploads/2020/09/GI-642318296-BucketListHeader.jpg" alt="Travel destination landscape">
+            <div class="hero-text">
+                <h2>Plan Your Next Adventure</h2>
+                <p>Organize your trips, destinations, and activities all in one place.</p>
+            </div>
+        </div>
+
+        <section class="cards-section">
+            <h2>Popular Destinations</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tropical beach with palm trees and ocean">
+                    <h3>Tropical Beach</h3>
+                    <p>Relax by the sea and enjoy the sunshine on beautiful sandy beaches.</p>
+                    <button class="learn-more" data-info="Perfect for sun lovers, these tropical beaches offer crystal clear water and white sand.">Learn More</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mountain landscape with peaks and valleys">
+                    <h3>Mountain Hike</h3>
+                    <p>Discover breathtaking views and fresh air on amazing mountain trails.</p>
+                    <button class="learn-more" data-info="Hike through peaceful trails and enjoy stunning mountain landscapes.">Learn More</button>
+                </div>
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad" alt="Urban city skyline at night">
+                    <h3>City Adventure</h3>
+                    <p>Explore vibrant cities full of culture, food, and unforgettable sights.</p>
+                    <button class="learn-more" data-info="Dive into the energy of modern cities and explore their unique culture.">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <aside>
+            <h3>Related Articles</h3>
+            <ul>
+                <li><a href="#">How to Prepare for a Trip</a></li>
+                <li><a href="#">Top Destinations</a></li>
+                <li><a href="#">Travel Tips</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 TripPlanner. All rights reserved.</p>
+        <p>Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+    </footer>
+
+    <div class="modal" id="infoModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Destination Info</h2>
+            <p id="modal-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

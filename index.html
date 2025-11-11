@@ -41,6 +41,7 @@
 
         <section class="cards-section">
             <h2>Popular Destinations</h2>
+            <input type="text" id="searchInput" placeholder="Search destinations..." class="search-bar">
             <div class="card-container">
                 <div class="card">
                     <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" alt="Tropical beach with palm trees and ocean">
@@ -72,6 +73,32 @@
             </ul>
         </aside>
     </main>
+
+    <section class="contact-section" id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <span class="error" id="nameError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" placeholder="Write your message" required></textarea>
+            <span class="error" id="messageError"></span>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+        <p class="success-message" id="successMessage"></p>
+    </form>
+</section>
 
     <footer>
         <p>&copy; 2025 TripPlanner. All rights reserved.</p>
